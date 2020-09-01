@@ -1,0 +1,28 @@
+.ant-upload {
+    width: 100%
+};
+
+.input-form {
+    width: 500px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+.get-items-form-button {
+    width: 100%;
+}
+
+.upload-file-button {
+    width: 100% !important;
+}
+
+.ant-upload.ant-upload-select {
+    display: block;
+}
+
+.ant-btn {
+    width: 100% !important;
+}
