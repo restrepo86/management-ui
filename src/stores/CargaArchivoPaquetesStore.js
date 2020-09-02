@@ -22,7 +22,6 @@ export default class CargaArchivoPaquetesStore {
           runInAction(() => {
             const { data } = response;
             this.salidaDetalleBolsasDiaData = data;
-            console.log('data', data);
             this.process.processDTO.loading = false;
             this.process.showMessage("Archivo Procesado Correctamente", 'success');
           });
