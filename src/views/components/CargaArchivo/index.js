@@ -26,8 +26,8 @@ class CargaArchivo extends React.Component {
         formData.append("archivoDetalleTrabajo", fileList[0]);
         formData.append("cedulaParticipante", cedulaParticipante);
         this.cargaArchivoPaquetesStore.cargarArchivoDetalleTrabajo(formData);
+        this.setState({ fileList: [] });
     };
-
 
     handleChangeFileName(cedulaParticipante) {
         this.setState(state => ({ cedulaParticipante }));
@@ -81,7 +81,7 @@ class CargaArchivo extends React.Component {
 
             <div className="container">
                 <Form className="input-form">
-    
+     
                             <Form.Item
                                 validateStatus={nombreArchivoError ? 'error' : ''}
                                 help={nombreArchivoError || ''}
